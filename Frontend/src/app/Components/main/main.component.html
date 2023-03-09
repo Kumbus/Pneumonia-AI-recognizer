@@ -1,0 +1,18 @@
+
+
+
+<input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+
+<div class="file-upload dropzone"
+    [class.dropzone-hover]="dropzoneHover"
+    (drop)="onFileDropped($event)"
+    (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave($event)">
+
+   {{fileName || "No file uploaded yet."}}
+
+    <button mat-mini-fab color="primary" class="upload-btn"
+      (click)="fileUpload.click()">
+        <mat-icon>attach_file</mat-icon>
+    </button>
+</div>

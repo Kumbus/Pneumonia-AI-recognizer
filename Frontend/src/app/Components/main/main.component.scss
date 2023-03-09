@@ -1,0 +1,26 @@
+.file-upload {
+  border: 2px dashed gray;
+  padding: 20px;
+  text-align: center;
+  height: 60%;
+  margin: 5px;
+
+}
+
+.file-input {
+  display: none;
+}
+
+.file-upload label {
+  font-size: 20px;
+}
+
+.dropzone {
+  border: 2px dashed gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.dropzone-hover {
+  border-color: #33ccff;
+}
