@@ -12,7 +12,7 @@
 }
 
 .file-upload label {
-  font-size: 20px;
+  font-size: larger;
 }
 
 .dropzone {
@@ -24,3 +24,10 @@
 .dropzone-hover {
   border-color: #33ccff;
 }
+
+ngb-progressbar
+{
+  margin: 5px;
+}
+
+

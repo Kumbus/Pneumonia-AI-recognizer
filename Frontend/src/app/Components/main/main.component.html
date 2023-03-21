@@ -1,7 +1,10 @@
+<div class="progressBarDiv">
+  <ngb-progressbar type="warning" [value]="uploadProgress" [striped]="true"
+  [animated]="true" [showValue]="true" *ngIf="uploadProgress>0"></ngb-progressbar>
 
+</div>
 
-
-<input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+<input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload accept="image/*">
 
 <div class="file-upload dropzone"
     [class.dropzone-hover]="dropzoneHover"
@@ -16,3 +19,5 @@
         <mat-icon>attach_file</mat-icon>
     </button>
 </div>
+
+

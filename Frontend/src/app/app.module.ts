@@ -8,9 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon'
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatButtonModule } from '@angular/material/button'
-import { MatProgressBarModule } from '@angular/material/progress-bar'
 import { HttpClientModule } from '@angular/common/http';
 import { DialogComponent } from './Components/dialog/dialog.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import '@angular/localize/init'
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { DialogComponent } from './Components/dialog/dialog.component';
     HttpClientModule,
     MatDialogModule,
     MatButtonModule,
-    MatProgressBarModule
+    MatSnackBarModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
